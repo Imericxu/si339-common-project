@@ -105,4 +105,7 @@ ul {
   html {
     scroll-behavior: auto;
   }
+  img[src$=".gif"] {
+    content: url("../images/reduced-motion.jpg");
+  }
 }
