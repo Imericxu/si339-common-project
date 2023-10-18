@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <a class="hidden-focusable-banner" href="#main-content" tabindex="1"
+    <a class="hidden-focusable-banner" href="#main-content"
       >Skip to Main Content</a
     >
 
@@ -41,7 +41,11 @@
               </a>
             </li>
             <li>
-              <a class="nav--link-current" href="travel.html">
+              <a
+                class="nav--link-current"
+                href="travel.html"
+                aria-current="page"
+              >
                 <i class="fa-solid fa-plane fa-sm"></i> Travel
               </a>
             </li>
@@ -53,7 +57,7 @@
           </ul>
         </div>
         <!--Empty onclick to allow "hover" state on mobile-->
-        <button class="nav--btn" tabindex="2">
+        <button class="nav--btn">
           <span class="nav--btn--text">
             <i class="fa-solid fa-plane"></i> Travel
           </span>

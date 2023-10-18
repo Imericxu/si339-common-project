@@ -41,7 +41,9 @@ img {
   align-items: flex-end;
   z-index: 100;
   width: 100vw;
+  height: 0;
   overflow: visible;
+  pointer-events: none;
 }
 .nav--container {
   display: grid;
@@ -120,13 +122,17 @@ img {
   margin: 0;
 }
 .nav--list li:hover,
-.nav--list li:active {
+.nav--list li:active,
+.nav--list li a:focus {
+  outline: none;
   background-color: var(--clr-neutral-1);
 }
 .nav--list a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding: 8px 32px 8px 24px;
   width: 100%;
+  min-height: 48px;
 }
 .nav--link-current {
   font-weight: bold;
