@@ -1,0 +1,108 @@
+:root {
+  --clr-neutral-0: hsl(0, 0%, 98%);
+  --clr-neutral-1: hsl(0, 0%, 90%);
+  --clr-neutral-2: hsl(220, 3%, 80%);
+  --clr-neutral-3: hsl(220, 3%, 60%);
+  --clr-neutral-4: hsl(220, 5%, 20%);
+  --clr-neutral-5: hsl(225, 7%, 4%);
+}
+
+* {
+  font-family: "Lato", "Verdana", "Avenir Next", sans-serif;
+}
+* :focus {
+  outline: revert;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  padding: 8px;
+}
+
+/* Tags sorted alphabetically */
+a {
+  cursor: pointer;
+}
+
+b {
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}
+
+em {
+  font-style: italic;
+}
+
+figure {
+  margin-block: 1rem;
+}
+
+h1 {
+  margin: 0.67rem 0;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0.83rem 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 1rem 0;
+  font-weight: bold;
+  font-size: 1.17rem;
+}
+
+h4 {
+  margin: 1.33rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+img {
+  margin-left: -8px;
+  max-width: 100vw;
+}
+
+li {
+  display: list-item;
+}
+li + li {
+  margin-top: 0.5rem;
+}
+
+ol {
+  margin: 1rem 0;
+  padding-inline-start: 24px;
+  list-style-type: decimal;
+}
+
+p {
+  margin: 0.8rem 0;
+}
+
+u {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 1rem 0;
+  padding-inline-start: 24px;
+  list-style-type: disc;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
