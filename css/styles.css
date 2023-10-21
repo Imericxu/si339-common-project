@@ -247,7 +247,8 @@ ul {
 }
 
 .dropup__list > li:hover,
-.dropup__list > li:active {
+.dropup__list > li:active,
+.dropup__list > li:focus-within {
   background-color: var(--clr-neutral-1);
 }
 
