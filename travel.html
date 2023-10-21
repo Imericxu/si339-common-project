@@ -12,8 +12,6 @@
     />
     <!--Normalize styles across browsers-->
     <link href="css/reset.css" rel="stylesheet" />
-    <!--Restore useful defaults-->
-    <link href="css/defaults.css" rel="stylesheet" />
     <!--Custom styles-->
     <link href="css/styles.css" rel="stylesheet" />
     <!--Font Awesome-->
@@ -27,22 +25,20 @@
   </head>
 
   <body>
-    <a class="hidden-focusable-banner" href="#main-content"
-      >Skip to Main Content</a
-    >
+    <a id="skip-to-main" href="#main-content">Skip to Main Content</a>
 
-    <nav class="nav">
-      <div class="nav--container">
-        <div class="nav--content">
-          <ul class="nav--list">
+    <nav id="nav">
+      <div class="dropup">
+        <div class="dropup__list-container">
+          <ul class="dropup__list">
             <li>
-              <a href="index.html">
+              <a class="dropup__list__action" href="index.html">
                 <i class="fa-solid fa-paw fa-sm"></i> Pets
               </a>
             </li>
-            <li>
+            <li class="dropup__list__item--selected">
               <a
-                class="nav--link-current"
+                class="dropup__list__action"
                 href="travel.html"
                 aria-current="page"
               >
@@ -50,36 +46,36 @@
               </a>
             </li>
             <li>
-              <a href="recipes.html">
+              <a class="dropup__list__action" href="recipes.html">
                 <i class="fa-solid fa-utensils fa-sm"></i> Recipes
               </a>
             </li>
           </ul>
         </div>
         <!--Empty onclick to allow "hover" state on mobile-->
-        <button class="nav--btn">
-          <span class="nav--btn--text">
-            <i class="fa-solid fa-plane"></i> Travel
+        <button class="dropup__btn">
+          <span>
+            <i class="fa-solid fa-plane dropup__btn__txt-icon"></i> Travel
           </span>
-          <span class="nav--btn--icon">
+          <span class="dropup__btn__icon">
             <i class="fa-solid fa-chevron-up"></i>
           </span>
         </button>
       </div>
     </nav>
-    <header><h1>Travel</h1></header>
+    <header id="header"><h1>Travel</h1></header>
 
     <main id="main-content">
-      <section class="grid">
-        <a class="grid-item" href="travel/0-berlingermany.html">
-          <figure class="grid--figure">
+      <section class="home-grid">
+        <a class="home-grid__item" href="travel/0-berlingermany.html">
+          <figure class="home-grid__figure">
             <!-- Decorative blur effect -->
             <img
-              class="img-blurred"
+              class="img-blur-decor"
               src="images/travel/berlin-brandenburg-gate.jpg"
               alt=""
             />
-            <div class="grid--figure--img-container">
+            <div class="home-grid__img-container">
               <img
                 src="images/travel/berlin-brandenburg-gate.jpg"
                 alt="The Brandenburg Gate in Berlin, Germany."
@@ -89,15 +85,15 @@
           </figure>
           <!--Eric Xu-->
         </a>
-        <a class="grid-item" href="travel/1-seoulsouthkorea.html">
-          <figure class="grid--figure">
+        <a class="home-grid__item" href="travel/1-seoulsouthkorea.html">
+          <figure class="home-grid__figure">
             <!-- Decorative blur effect -->
             <img
-              class="img-blurred"
+              class="img-blur-decor"
               src="images/travel/seoul-night.jpg"
               alt=""
             />
-            <div class="grid--figure--img-container">
+            <div class="home-grid__img-container">
               <img
                 src="images/travel/seoul-night.jpg"
                 alt="Lights from buildings and cars illuminate the night sky."
@@ -107,15 +103,15 @@
           </figure>
           <!--Claire Callen and Malwine Fischer-->
         </a>
-        <a class="grid-item" href="travel/2-apostleislandswisconsin.html">
-          <figure class="grid--figure">
+        <a class="home-grid__item" href="travel/2-apostleislandswisconsin.html">
+          <figure class="home-grid__figure">
             <!-- Decorative blur effect -->
             <img
-              class="img-blurred"
+              class="img-blur-decor"
               src="images/travel/apostle-islands.jpg"
               alt=""
             />
-            <div class="grid--figure--img-container">
+            <div class="home-grid__img-container">
               <img
                 src="images/travel/apostle-islands.jpg"
                 alt="A view of the Apostle Islands from the water."
@@ -125,15 +121,18 @@
           </figure>
           <!--Michelle Lockett (edited by Eric Xu)-->
         </a>
-        <a class="grid-item" href="travel/3-ebenalpmountainswitzerland.html">
-          <figure class="grid--figure">
+        <a
+          class="home-grid__item"
+          href="travel/3-ebenalpmountainswitzerland.html"
+        >
+          <figure class="home-grid__figure">
             <!-- Decorative blur effect -->
             <img
-              class="img-blurred"
+              class="img-blur-decor"
               src="images/travel/ebenalp-seealpsee-lake.jpeg"
               alt=""
             />
-            <div class="grid--figure--img-container">
+            <div class="home-grid__img-container">
               <img
                 src="images/travel/ebenalp-seealpsee-lake.jpeg"
                 alt="Small lake framed by forest on the left and mountains on the right. A mountain stands in the background."

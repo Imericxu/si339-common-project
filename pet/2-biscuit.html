@@ -12,8 +12,6 @@
     />
     <!--Normalize styles across browsers-->
     <link href="../css/reset.css" rel="stylesheet" />
-    <!--Restore useful defaults-->
-    <link href="../css/defaults.css" rel="stylesheet" />
     <!--Custom styles-->
     <link href="../css/styles.css" rel="stylesheet" />
     <!--Font Awesome-->
@@ -27,37 +25,35 @@
   </head>
 
   <body>
-    <a class="hidden-focusable-banner" href="#main-content"
-      >Skip to Main Content</a
-    >
+    <a id="skip-to-main" href="#main-content">Skip to Main Content</a>
 
-    <nav class="nav">
-      <div class="nav--container">
-        <div class="nav--content">
-          <ul class="nav--list">
-            <li>
-              <a class="nav--link-current" href="../index.html">
+    <nav id="nav">
+      <div class="dropup">
+        <div class="dropup__list-container">
+          <ul class="dropup__list">
+            <li class="dropup__list__item--selected">
+              <a class="dropup__list__action" href="../index.html">
                 <i class="fa-solid fa-paw fa-sm"></i> Pets
               </a>
             </li>
             <li>
-              <a href="../travel.html">
+              <a class="dropup__list__action" href="../travel.html">
                 <i class="fa-solid fa-plane fa-sm"></i> Travel
               </a>
             </li>
             <li>
-              <a href="../recipes.html">
+              <a class="dropup__list__action" href="../recipes.html">
                 <i class="fa-solid fa-utensils fa-sm"></i> Recipes
               </a>
             </li>
           </ul>
         </div>
         <!--Empty onclick to allow "hover" state on mobile-->
-        <button class="nav--btn">
-          <span class="nav--btn--text">
-            <i class="fa-solid fa-paw"></i> Pets
+        <button class="dropup__btn">
+          <span>
+            <i class="fa-solid fa-paw dropup__btn__txt-icon"></i> Pets
           </span>
-          <span class="nav--btn--icon">
+          <span class="dropup__btn__icon">
             <i class="fa-solid fa-chevron-up"></i>
           </span>
         </button>

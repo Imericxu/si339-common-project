@@ -12,8 +12,6 @@
     />
     <!--Normalize styles across browsers-->
     <link href="css/reset.css" rel="stylesheet" />
-    <!--Restore useful defaults-->
-    <link href="css/defaults.css" rel="stylesheet" />
     <!--Custom styles-->
     <link href="css/styles.css" rel="stylesheet" />
     <!--Font Awesome-->
@@ -27,17 +25,15 @@
   </head>
 
   <body>
-    <a class="hidden-focusable-banner" href="#main-content"
-      >Skip to Main Content</a
-    >
+    <a id="skip-to-main" href="#main-content">Skip to Main Content</a>
 
-    <nav class="nav">
-      <div class="nav--container">
-        <div class="nav--content">
-          <ul class="nav--list">
-            <li>
+    <nav id="nav">
+      <div class="dropup">
+        <div class="dropup__list-container">
+          <ul class="dropup__list">
+            <li class="dropup__list__item--selected">
               <a
-                class="nav--link-current"
+                class="dropup__list__action"
                 href="index.html"
                 aria-current="page"
               >
@@ -45,41 +41,41 @@
               </a>
             </li>
             <li>
-              <a href="travel.html">
+              <a class="dropup__list__action" href="travel.html">
                 <i class="fa-solid fa-plane fa-sm"></i> Travel
               </a>
             </li>
             <li>
-              <a href="recipes.html">
+              <a class="dropup__list__action" href="recipes.html">
                 <i class="fa-solid fa-utensils fa-sm"></i> Recipes
               </a>
             </li>
           </ul>
         </div>
         <!--Empty onclick to allow "hover" state on mobile-->
-        <button class="nav--btn">
-          <span class="nav--btn--text">
-            <i class="fa-solid fa-paw"></i> Pets
+        <button class="dropup__btn">
+          <span>
+            <i class="fa-solid fa-paw dropup__btn__txt-icon"></i> Pets
           </span>
-          <span class="nav--btn--icon">
+          <span class="dropup__btn__icon">
             <i class="fa-solid fa-chevron-up"></i>
           </span>
         </button>
       </div>
     </nav>
-    <header><h1>Pets</h1></header>
+    <header id="header"><h1>Pets</h1></header>
 
     <main id="main-content">
-      <section class="grid">
-        <a class="grid-item" href="pet/0-bob.html">
-          <figure class="grid--figure">
+      <section class="home-grid">
+        <a class="home-grid__item" href="pet/0-bob.html">
+          <figure class="home-grid__figure">
             <!-- Decorative blur effect -->
             <img
-              class="img-blurred"
+              class="img-blur-decor"
               src="images/pets/bob-portrait.jpeg"
               alt=""
             />
-            <div class="grid--figure--img-container">
+            <div class="home-grid__img-container">
               <img
                 src="images/pets/bob-portrait.jpeg"
                 alt="Bob is a black Doberman wearing a collar with a pink flower."
@@ -89,15 +85,15 @@
           </figure>
           <!--Kyle and Hudson-->
         </a>
-        <a class="grid-item" href="pet/1-finn.html">
-          <figure class="grid--figure">
+        <a class="home-grid__item" href="pet/1-finn.html">
+          <figure class="home-grid__figure">
             <!-- Decorative blur effect -->
             <img
-              class="img-blurred"
+              class="img-blur-decor"
               src="images/pets/finn-halloween.jpg"
               alt=""
             />
-            <div class="grid--figure--img-container">
+            <div class="home-grid__img-container">
               <img
                 src="images/pets/finn-halloween.jpg"
                 alt="Finn wears a bat costume for halloween."
@@ -107,11 +103,15 @@
           </figure>
           <!--Lauren Rodriguez-->
         </a>
-        <a class="grid-item" href="pet/2-biscuit.html">
-          <figure class="grid--figure">
+        <a class="home-grid__item" href="pet/2-biscuit.html">
+          <figure class="home-grid__figure">
             <!-- Decorative blur effect -->
-            <img class="img-blurred" src="images/pets/biscuit-1.jpeg" alt="" />
-            <div class="grid--figure--img-container">
+            <img
+              class="img-blur-decor"
+              src="images/pets/biscuit-1.jpeg"
+              alt=""
+            />
+            <div class="home-grid__img-container">
               <img
                 src="images/pets/biscuit-1.jpeg"
                 alt="Shiba inu sitting in front of pond with stones in the background."
@@ -121,11 +121,15 @@
           </figure>
           <!--Allison Lee-->
         </a>
-        <a class="grid-item" href="pet/3-honey.html">
-          <figure class="grid--figure">
+        <a class="home-grid__item" href="pet/3-honey.html">
+          <figure class="home-grid__figure">
             <!-- Decorative blur effect -->
-            <img class="img-blurred" src="images/pets/honey-main.jpeg" alt="" />
-            <div class="grid--figure--img-container">
+            <img
+              class="img-blur-decor"
+              src="images/pets/honey-main.jpeg"
+              alt=""
+            />
+            <div class="home-grid__img-container">
               <img
                 src="images/pets/honey-main.jpeg"
                 alt="Honey is a medium-sized golden retriever with honey brown fur. She has a white patch of fur on her chest and her right eye is smaller than her left."
@@ -135,15 +139,15 @@
           </figure>
           <!--Abbie Tooman-->
         </a>
-        <a class="grid-item" href="pet/4-milktea.html">
-          <figure class="grid--figure">
+        <a class="home-grid__item" href="pet/4-milktea.html">
+          <figure class="home-grid__figure">
             <!-- Decorative blur effect -->
             <img
-              class="img-blurred"
+              class="img-blur-decor"
               src="images/pets/milktea-main.jpg"
               alt=""
             />
-            <div class="grid--figure--img-container">
+            <div class="home-grid__img-container">
               <img
                 src="images/pets/milktea-main.jpg"
                 alt="Milktea taking nap"
