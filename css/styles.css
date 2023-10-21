@@ -1,5 +1,6 @@
 /***** Default Styles *****/
 :root {
+  --dim-padding-page: 8px;
   --clr-neutral-0: hsl(0, 0%, 98%);
   --clr-neutral-1: hsl(0, 0%, 90%);
   --clr-neutral-2: hsl(220, 3%, 80%);
@@ -20,10 +21,6 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   line-height: 1.5;
-}
-
-body {
-  padding: 8px;
 }
 
 /* Tags sorted alphabetically */
@@ -108,12 +105,6 @@ ul {
   }
 }
 /***** Utility classes *****/
-.full-width {
-  /* Negative margin to counteract body padding */
-  margin-left: -8px;
-  width: 100vw;
-}
-
 .img-blur-decor {
   /* Zoom in to cover blurred edges */
   transform: scale(1.5);
@@ -153,10 +144,14 @@ ul {
   justify-content: center;
   align-items: flex-end;
   z-index: 100;
-  width: 100vw;
+  width: 100%;
   height: 0;
   overflow: visible;
   pointer-events: none;
+}
+
+#header {
+  padding: var(--dim-padding-page);
 }
 
 /***** Dropup *****/
@@ -284,8 +279,7 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
   grid-auto-rows: 200px;
   gap: 1px;
-  margin-left: -8px;
-  width: 100vw;
+  width: 100%;
 }
 
 .home-grid__item {
