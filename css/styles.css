@@ -436,3 +436,7 @@ ul {
     transition: opacity 0.2s ease-in-out;
   }
 }
+.link {
+  color: hsl(221, 51%, 28%);
+  text-decoration: underline;
+}
