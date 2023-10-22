@@ -415,7 +415,8 @@ ul {
     transparent,
     rgba(20, 20, 20, 0.9)
   );
-  padding: 40px var(--dim-padding-page) var(--dim-padding-page);
+  padding: 40px calc(2 * var(--dim-padding-page))
+    calc(2 * var(--dim-padding-page));
   width: 100%;
   color: hsl(0, 0%, 98%);
 }
