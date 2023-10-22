@@ -150,8 +150,10 @@ ul {
 }
 
 #header {
+  background-color: hsl(219, 28%, 89%);
   padding: var(--dim-padding-page);
   padding-bottom: 0;
+  overflow: hidden;
 }
 #header.l-full-pad {
   padding: var(--dim-padding-page);
@@ -214,7 +216,7 @@ ul {
   margin: 0;
   box-shadow: 0 0 3px 0 hsl(0, 0%, 30%);
   border-radius: 8px 8px 0 0;
-  background: hsl(220, 18%, 88%);
+  background: hsl(220, 30%, 87%);
   padding: 8px 0 48px;
   width: calc(100% - 8px);
   overflow: auto;
@@ -267,7 +269,7 @@ ul {
 .dropup__list > li:hover,
 .dropup__list > li:active,
 .dropup__list > li:focus-within {
-  background-color: #c3c9d5;
+  background-color: #b9c4da;
 }
 
 .dropup__list__item--selected {
@@ -391,11 +393,12 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
   height: 100%;
 }
 
 .hero__img {
+  z-index: 1;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -405,6 +408,7 @@ ul {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 2;
   margin: 0;
   background-image: linear-gradient(
     to bottom,
@@ -422,6 +426,7 @@ ul {
 
 .hero__btn {
   position: absolute;
+  z-index: 3;
   inset: 0;
 }
 
