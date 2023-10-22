@@ -295,11 +295,13 @@ ul {
 }
 .home-grid__figure .img-blur-decor {
   position: absolute;
+  z-index: 1;
   inset: 0;
 }
 .home-grid__figure > figcaption {
   position: absolute;
   bottom: 0;
+  z-index: 3;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0),
@@ -320,6 +322,7 @@ ul {
   overflow: hidden;
 }
 .home-grid__img-container > img {
+  z-index: 2;
   min-width: 70%;
   -o-object-fit: cover;
   object-fit: cover;
