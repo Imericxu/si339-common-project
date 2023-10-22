@@ -1,12 +1,6 @@
 /***** Default Styles *****/
 :root {
   --dim-padding-page: 8px;
-  --clr-neutral-0: hsl(0, 0%, 98%);
-  --clr-neutral-1: hsl(0, 0%, 90%);
-  --clr-neutral-2: hsl(220, 3%, 80%);
-  --clr-neutral-3: hsl(220, 3%, 60%);
-  --clr-neutral-4: hsl(220, 5%, 20%);
-  --clr-neutral-5: hsl(225, 7%, 4%);
 }
 
 * {
@@ -21,6 +15,10 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   line-height: 1.5;
+}
+
+body {
+  background-color: hsl(218, 15%, 93%);
 }
 
 /* Tags sorted alphabetically */
@@ -173,15 +171,14 @@ ul {
   align-items: center;
   gap: 16px;
   z-index: 100;
-  box-shadow: 0 2px 5px 0 var(--clr-neutral-4);
-  border: 1px solid var(--clr-neutral-3);
+  box-shadow: 0 2px 8px 0 hsl(0, 0%, 30%);
   border-radius: 8px;
-  background: var(--clr-neutral-5);
+  background: hsl(221, 51%, 28%);
   padding-inline: 16px;
   min-width: 160px;
   height: 48px;
   pointer-events: all;
-  color: var(--clr-neutral-0);
+  color: hsl(0, 0%, 98%);
   font-weight: bold;
   text-align: center;
 }
@@ -206,21 +203,33 @@ ul {
   left: 4px;
   transform: translateY(0);
   margin: 0;
-  box-shadow: 0 0 3px 0 var(--clr-neutral-4);
+  box-shadow: 0 0 3px 0 hsl(0, 0%, 30%);
   border-radius: 8px 8px 0 0;
-  background: var(--clr-neutral-0);
-  padding: 0 0 48px;
+  background: hsl(220, 18%, 88%);
+  padding: 8px 0 48px;
   width: calc(100% - 8px);
   overflow: auto;
   pointer-events: none;
-  color: var(--clr-neutral-5);
+  color: hsl(0, 0%, 8%);
   list-style: none;
 }
 .dropup__list > li {
+  position: relative;
   white-space: nowrap;
 }
 .dropup__list > li + li {
   margin: 0;
+}
+
+/* Add a colored rectangle to the left of the selected item */
+.dropup__list__item--selected::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsl(37, 98%, 44%);
+  width: 4px;
+  height: 100%;
+  content: "";
 }
 
 .dropup__list__action {
@@ -249,7 +258,7 @@ ul {
 .dropup__list > li:hover,
 .dropup__list > li:active,
 .dropup__list > li:focus-within {
-  background-color: var(--clr-neutral-1);
+  background-color: #c3c9d5;
 }
 
 .dropup__list__item--selected {
@@ -304,13 +313,13 @@ ul {
   z-index: 3;
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.9)
+    transparent,
+    rgba(20, 20, 20, 0.6),
+    rgba(20, 20, 20, 0.9)
   );
   padding: 16px 8px 8px 8px;
   width: 100%;
-  color: var(--clr-neutral-1);
+  color: hsl(0, 0%, 98%);
 }
 
 .home-grid__img-container {
