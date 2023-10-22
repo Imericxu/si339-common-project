@@ -115,6 +115,15 @@ ul {
   object-position: center;
 }
 
+.long-text__content > *:first-child,
+.long-text > *:first-child {
+  margin-top: 0;
+}
+.long-text__content > *:last-child,
+.long-text > *:last-child {
+  margin-bottom: 0;
+}
+
 /***** Major layout styles *****/
 #skip-to-main {
   position: absolute;
@@ -184,7 +193,7 @@ ul {
   z-index: 100;
   box-shadow: 0 2px 8px 0 hsl(0, 0%, 30%);
   border-radius: 8px;
-  background: hsl(221, 51%, 28%);
+  background: hsl(221, 51%, 30%);
   padding-inline: 16px;
   min-width: 160px;
   height: 48px;
@@ -437,7 +446,66 @@ ul {
     transition: opacity 0.2s ease-in-out;
   }
 }
+/* Smaller modules can be include directly */
 .link {
-  color: hsl(221, 51%, 28%);
+  color: hsl(221, 51%, 30%);
   text-decoration: underline;
+}
+
+.article {
+  padding: var(--dim-padding-page);
+}
+
+.long-text {
+  position: relative;
+  border-radius: 8px;
+  background: hsl(219, 28%, 89%);
+  padding: 8px;
+}
+
+.long-text--expandable {
+  overflow: hidden;
+}
+.long-text--expandable::after {
+  position: absolute;
+  inset: auto 0 0;
+  background: linear-gradient(transparent, hsl(219, 28%, 89%));
+  height: 64px;
+  content: "";
+}
+.long-text--expandable.long-text--expanded::after {
+  height: 0;
+}
+
+.long-text__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 32px;
+  background-color: hsl(221, 51%, 30%);
+  width: 4px;
+  height: calc(100% - 16px);
+}
+.long-text__btn:hover,
+.long-text__btn:active {
+  background-color: #385dad;
+}
+
+.long-text__content {
+  margin-left: 16px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .long-text__btn {
+    transition-duration: 0.5s;
+    transition-property: transform, height, top;
+    transition-timing-function: ease-in-out;
+  }
+  .long-text {
+    transition: height 0.5s ease-in-out;
+  }
+  .long-text::after {
+    transition: height 0.5s ease-in-out;
+  }
 }
