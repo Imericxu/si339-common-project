@@ -30,55 +30,37 @@
     <title>Bob</title>
   </head>
 
-  <body>
+  <body class="p-details">
     <a id="skip-to-main" href="#main-content">Skip to Main Content</a>
 
-    <nav id="nav">
-      <div class="dropup">
-        <button class="dropup__btn" title="Navigation" aria-label="Navigation">
-          <span>
-            <i class="fa-solid fa-paw dropup__btn__txt-icon"></i> Pets
-          </span>
-          <span class="dropup__btn__icon">
-            <i class="fa-solid fa-chevron-up"></i>
-          </span>
-        </button>
-
-        <div class="dropup__list-container">
-          <ul class="dropup__list">
-            <li class="dropup__list__item--selected">
-              <a class="dropup__list__action" href="../index.html">
-                <i class="fa-solid fa-paw fa-sm"></i> Pets
-              </a>
-            </li>
-            <li>
-              <a class="dropup__list__action" href="../travel.html">
-                <i class="fa-solid fa-plane fa-sm"></i> Travel
-              </a>
-            </li>
-            <li>
-              <a class="dropup__list__action" href="../recipes.html">
-                <i class="fa-solid fa-utensils fa-sm"></i> Recipes
-              </a>
-            </li>
-          </ul>
+    <header id="header">
+      <nav id="nav">
+        <div class="back-btn">
+          <a
+            class="back-btn__action"
+            href="../index.html"
+            aria-label="Back to Travel"
+          >
+            <i class="fa-solid fa-arrow-left fa-xl"></i>
+          </a>
         </div>
+      </nav>
+
+      <div class="hero" title="Bob">
+        <img
+          class="img-blur-decor hero__bg"
+          src="../images/pets/bob-portrait.jpeg"
+          alt=""
+        />
+        <img
+          class="hero__img"
+          src="../images/pets/bob-portrait.jpeg"
+          alt="Bob is a black Doberman wearing a collar with a pink flower."
+        />
+        <h1 class="hero__txt">Bob</h1>
+        <!-- Invisible button to hide text -->
+        <button class="hero__btn" aria-label="Hide text"></button>
       </div>
-    </nav>
-    <header class="hero l-full-pad" id="header" title="Bob">
-      <img
-        class="img-blur-decor hero__bg"
-        src="../images/pets/bob-portrait.jpeg"
-        alt=""
-      />
-      <img
-        class="hero__img"
-        src="../images/pets/bob-portrait.jpeg"
-        alt="Bob is a black Doberman wearing a collar with a pink flower."
-      />
-      <h1 class="hero__txt">Bob</h1>
-      <!-- Invisible button to hide text -->
-      <button class="hero__btn" aria-label="Hide text"></button>
     </header>
 
     <main id="main-content">
@@ -109,53 +91,55 @@
 
         <h2>Photo Gallery</h2>
 
-        <div class="constrained-img">
-          <img
-            class="img-blur-decor constrained-img__bg"
-            src="../images/pets/bob-stick.jpeg"
-            alt=""
-          />
-          <img
-            class="constrained-img__img"
-            src="../images/pets/bob-stick.jpeg"
-            alt="Black Doberman with stick in mouth."
-          />
-        </div>
-        <div class="constrained-img">
-          <img
-            class="img-blur-decor constrained-img__bg"
-            src="../images/pets/bob-fetch.webp"
-            alt=""
-          />
-          <img
-            class="constrained-img__img"
-            src="../images/pets/bob-fetch.webp"
-            alt="Doberman leaping into air, catching frisbee."
-          />
-        </div>
-        <div class="constrained-img">
-          <img
-            class="img-blur-decor constrained-img__bg"
-            src="../images/pets/bob-running.jpeg"
-            alt=""
-          />
-          <img
-            class="constrained-img__img"
-            src="../images/pets/bob-running.jpeg"
-            alt="Doberman very happily running fast."
-          />
-        </div>
-        <div class="constrained-img">
-          <img
-            class="img-blur-decor constrained-img__bg"
-            src="../images/pets/bob-sleeping.jpeg"
-            alt=""
-          />
-          <img
-            class="constrained-img__img"
-            src="../images/pets/bob-sleeping.jpeg"
-            alt="Doberman sleeping in a goofy way."
-          />
+        <div class="photo-grid">
+          <div class="constrained-img photo-grid__img">
+            <img
+              class="img-blur-decor constrained-img__bg"
+              src="../images/pets/bob-stick.jpeg"
+              alt=""
+            />
+            <img
+              class="constrained-img__img"
+              src="../images/pets/bob-stick.jpeg"
+              alt="Black Doberman with stick in mouth."
+            />
+          </div>
+          <div class="constrained-img photo-grid__img">
+            <img
+              class="img-blur-decor constrained-img__bg"
+              src="../images/pets/bob-fetch.webp"
+              alt=""
+            />
+            <img
+              class="constrained-img__img"
+              src="../images/pets/bob-fetch.webp"
+              alt="Doberman leaping into air, catching frisbee."
+            />
+          </div>
+          <div class="constrained-img photo-grid__img">
+            <img
+              class="img-blur-decor constrained-img__bg"
+              src="../images/pets/bob-running.jpeg"
+              alt=""
+            />
+            <img
+              class="constrained-img__img"
+              src="../images/pets/bob-running.jpeg"
+              alt="Doberman very happily running fast."
+            />
+          </div>
+          <div class="constrained-img photo-grid__img">
+            <img
+              class="img-blur-decor constrained-img__bg"
+              src="../images/pets/bob-sleeping.jpeg"
+              alt=""
+            />
+            <img
+              class="constrained-img__img"
+              src="../images/pets/bob-sleeping.jpeg"
+              alt="Doberman sleeping in a goofy way."
+            />
+          </div>
         </div>
 
         <!-- Kyle and Hudson -->

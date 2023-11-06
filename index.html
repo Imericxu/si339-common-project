@@ -30,46 +30,66 @@
     <title>Pets</title>
   </head>
 
-  <body>
+  <body class="p-home">
     <a id="skip-to-main" href="#main-content">Skip to Main Content</a>
 
-    <nav id="nav">
-      <div class="dropup">
-        <button class="dropup__btn" title="Navigation" aria-label="Navigation">
-          <span>
-            <i class="fa-solid fa-paw dropup__btn__txt-icon"></i> Pets
-          </span>
-          <span class="dropup__btn__icon">
-            <i class="fa-solid fa-chevron-up"></i>
-          </span>
-        </button>
-
-        <div class="dropup__list-container">
-          <ul class="dropup__list">
-            <li class="dropup__list__item--selected">
-              <a
-                class="dropup__list__action"
-                href="index.html"
-                aria-current="page"
-              >
-                <i class="fa-solid fa-paw fa-sm"></i> Pets
-              </a>
-            </li>
-            <li>
-              <a class="dropup__list__action" href="travel.html">
-                <i class="fa-solid fa-plane fa-sm"></i> Travel
-              </a>
-            </li>
-            <li>
-              <a class="dropup__list__action" href="recipes.html">
-                <i class="fa-solid fa-utensils fa-sm"></i> Recipes
-              </a>
-            </li>
-          </ul>
+    <header id="header">
+      <h1 class="title--with-icon">
+        <i class="fa-solid fa-paw fa-sm"></i> Pets
+      </h1>
+      <nav id="nav">
+        <div class="nav">
+          <a class="nav__action" href="index.html" aria-current="page">
+            <span class="nav__action__txt">Pets</span>
+          </a>
+          <a class="nav__action" href="travel.html">
+            <span class="nav__action__txt">Travel</span>
+          </a>
+          <a class="nav__action" href="recipes.html">
+            <span class="nav__action__txt">Recipes</span>
+          </a>
         </div>
-      </div>
-    </nav>
-    <header id="header"><h1>Pets</h1></header>
+
+        <div class="dropup">
+          <button
+            class="dropup__btn"
+            title="Navigation"
+            aria-label="Navigation"
+          >
+            <span>
+              <i class="fa-solid fa-paw dropup__btn__txt-icon"></i> Pets
+            </span>
+            <span class="dropup__btn__icon">
+              <i class="fa-solid fa-chevron-up"></i>
+            </span>
+          </button>
+
+          <div class="dropup__list-container">
+            <ul class="dropup__list">
+              <li class="dropup__list__item--selected">
+                <a
+                  class="dropup__list__action"
+                  href="index.html"
+                  aria-current="page"
+                >
+                  <i class="fa-solid fa-paw fa-sm"></i> Pets
+                </a>
+              </li>
+              <li>
+                <a class="dropup__list__action" href="travel.html">
+                  <i class="fa-solid fa-plane fa-sm"></i> Travel
+                </a>
+              </li>
+              <li>
+                <a class="dropup__list__action" href="recipes.html">
+                  <i class="fa-solid fa-utensils fa-sm"></i> Recipes
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main id="main-content">
       <div class="surface-container-wrapper">

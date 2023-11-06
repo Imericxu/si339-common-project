@@ -30,59 +30,37 @@
     <title>Ebenalp Mountain, Switzerland</title>
   </head>
 
-  <body>
+  <body class="p-details">
     <a id="skip-to-main" href="#main-content">Skip to Main Content</a>
 
-    <nav id="nav">
-      <div class="dropup">
-        <button class="dropup__btn" title="Navigation" aria-label="Navigation">
-          <span>
-            <i class="fa-solid fa-plane dropup__btn__txt-icon"></i> Travel
-          </span>
-          <span class="dropup__btn__icon">
-            <i class="fa-solid fa-chevron-up"></i>
-          </span>
-        </button>
-
-        <div class="dropup__list-container">
-          <ul class="dropup__list">
-            <li>
-              <a class="dropup__list__action" href="../index.html">
-                <i class="fa-solid fa-paw fa-sm"></i> Pets
-              </a>
-            </li>
-            <li class="dropup__list__item--selected">
-              <a class="dropup__list__action" href="../travel.html">
-                <i class="fa-solid fa-plane fa-sm"></i> Travel
-              </a>
-            </li>
-            <li>
-              <a class="dropup__list__action" href="../recipes.html">
-                <i class="fa-solid fa-utensils fa-sm"></i> Recipes
-              </a>
-            </li>
-          </ul>
+    <header id="header">
+      <nav id="nav">
+        <div class="back-btn">
+          <a
+            class="back-btn__action"
+            href="../travel.html"
+            aria-label="Back to Travel"
+          >
+            <i class="fa-solid fa-arrow-left fa-xl"></i>
+          </a>
         </div>
+      </nav>
+
+      <div class="hero" title="Ebenalp Mountain, Switzerland">
+        <img
+          class="img-blur-decor hero__bg"
+          src="../images/travel/ebenalp-seealpsee-lake.jpeg"
+          alt=""
+        />
+        <img
+          class="hero__img"
+          src="../images/travel/ebenalp-seealpsee-lake.jpeg"
+          alt="Small lake framed by forest on the left and mountains on the right. A mountain stands in the background."
+        />
+        <h1 class="hero__txt">Ebenalp Mountain, Switzerland</h1>
+        <!-- Invisible button to hide text -->
+        <button class="hero__btn" aria-label="Hide text"></button>
       </div>
-    </nav>
-    <header
-      class="hero l-full-pad"
-      id="header"
-      title="Ebenalp Mountain, Switzerland"
-    >
-      <img
-        class="img-blur-decor hero__bg"
-        src="../images/travel/ebenalp-seealpsee-lake.jpeg"
-        alt=""
-      />
-      <img
-        class="hero__img"
-        src="../images/travel/ebenalp-seealpsee-lake.jpeg"
-        alt="Small lake framed by forest on the left and mountains on the right. A mountain stands in the background."
-      />
-      <h1 class="hero__txt">Ebenalp Mountain, Switzerland</h1>
-      <!-- Invisible button to hide text -->
-      <button class="hero__btn" aria-label="Hide text"></button>
     </header>
 
     <main id="main-content">
@@ -123,91 +101,93 @@
 
         <h2>Photo Gallery</h2>
 
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/ebenalp-cow.jpg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/ebenalp-cow.jpg"
-              alt="A cow facing the camera being petted on the head by Elijah."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            Petting a cow on Ebenalp.
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/ebenalp-abys.jpeg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/ebenalp-abys.jpeg"
-              alt="A thin trail stretches across a mountain with a steep drop on the right side. Elijah on the trail."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            Berggasthaus Schäfler trail.
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/ebenalp-seealpsee-overlook.jpeg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/ebenalp-seealpsee-overlook.jpeg"
-              alt="A steep cliff and greenery in the foreground overlooks a lake and mountains in the background. Clouds cover the mountains."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            Overlook of Seealpsee lake.
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/ebenalp-cow-elijah.jpeg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/ebenalp-cow-elijah.jpeg"
-              alt="Elijah takes a selfie with cow grazing in background on sloped grassy hill."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            Cow above the clouds.
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/ebenalp-lake-elijah.jpeg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/ebenalp-lake-elijah.jpeg"
-              alt="Elijah standing on a rocky shore in front of a lake with mountains in the background."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            Seealpsee lake rocks.
-          </figcaption>
-        </figure>
+        <div class="photo-grid photo-grid--auto-rows">
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/ebenalp-cow.jpg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/ebenalp-cow.jpg"
+                alt="A cow facing the camera being petted on the head by Elijah."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              Petting a cow on Ebenalp.
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/ebenalp-abys.jpeg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/ebenalp-abys.jpeg"
+                alt="A thin trail stretches across a mountain with a steep drop on the right side. Elijah on the trail."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              Berggasthaus Schäfler trail.
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/ebenalp-seealpsee-overlook.jpeg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/ebenalp-seealpsee-overlook.jpeg"
+                alt="A steep cliff and greenery in the foreground overlooks a lake and mountains in the background. Clouds cover the mountains."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              Overlook of Seealpsee lake.
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/ebenalp-cow-elijah.jpeg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/ebenalp-cow-elijah.jpeg"
+                alt="Elijah takes a selfie with cow grazing in background on sloped grassy hill."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              Cow above the clouds.
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/ebenalp-lake-elijah.jpeg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/ebenalp-lake-elijah.jpeg"
+                alt="Elijah standing on a rocky shore in front of a lake with mountains in the background."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              Seealpsee lake rocks.
+            </figcaption>
+          </figure>
+        </div>
 
         <!-- Elijah Cantu (edited by Eric Xu) -->
       </div>

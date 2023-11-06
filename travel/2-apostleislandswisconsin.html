@@ -30,59 +30,37 @@
     <title>Apostle Islands, Wisconsin</title>
   </head>
 
-  <body>
+  <body class="p-details">
     <a id="skip-to-main" href="#main-content">Skip to Main Content</a>
 
-    <nav id="nav">
-      <div class="dropup">
-        <button class="dropup__btn" title="Navigation" aria-label="Navigation">
-          <span>
-            <i class="fa-solid fa-plane dropup__btn__txt-icon"></i> Travel
-          </span>
-          <span class="dropup__btn__icon">
-            <i class="fa-solid fa-chevron-up"></i>
-          </span>
-        </button>
-
-        <div class="dropup__list-container">
-          <ul class="dropup__list">
-            <li>
-              <a class="dropup__list__action" href="../index.html">
-                <i class="fa-solid fa-paw fa-sm"></i> Pets
-              </a>
-            </li>
-            <li class="dropup__list__item--selected">
-              <a class="dropup__list__action" href="../travel.html">
-                <i class="fa-solid fa-plane fa-sm"></i> Travel
-              </a>
-            </li>
-            <li>
-              <a class="dropup__list__action" href="../recipes.html">
-                <i class="fa-solid fa-utensils fa-sm"></i> Recipes
-              </a>
-            </li>
-          </ul>
+    <header id="header">
+      <nav id="nav">
+        <div class="back-btn">
+          <a
+            class="back-btn__action"
+            href="../travel.html"
+            aria-label="Back to Travel"
+          >
+            <i class="fa-solid fa-arrow-left fa-xl"></i>
+          </a>
         </div>
+      </nav>
+
+      <div class="hero" title="Apostle Islands, Wisconsin">
+        <img
+          class="img-blur-decor hero__bg"
+          src="../images/travel/apostle-islands.jpg"
+          alt=""
+        />
+        <img
+          class="hero__img"
+          src="../images/travel/apostle-islands.jpg"
+          alt="A view of the Apostle Islands from the water."
+        />
+        <h1 class="hero__txt">Apostle Islands, Wisconsin</h1>
+        <!-- Invisible button to hide text -->
+        <button class="hero__btn" aria-label="Hide text"></button>
       </div>
-    </nav>
-    <header
-      class="hero l-full-pad"
-      id="header"
-      title="Apostle Islands, Wisconsin"
-    >
-      <img
-        class="img-blur-decor hero__bg"
-        src="../images/travel/apostle-islands.jpg"
-        alt=""
-      />
-      <img
-        class="hero__img"
-        src="../images/travel/apostle-islands.jpg"
-        alt="A view of the Apostle Islands from the water."
-      />
-      <h1 class="hero__txt">Apostle Islands, Wisconsin</h1>
-      <!-- Invisible button to hide text -->
-      <button class="hero__btn" aria-label="Hide text"></button>
     </header>
 
     <main id="main-content">
@@ -120,92 +98,94 @@
 
         <h2>Photo Gallery</h2>
 
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/apostle-caves-winter.jpeg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/apostle-caves-winter.jpeg"
-              alt="Ice caves in the winter."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            In winter, when the lake freezes, the sea caves turn into ice caves.
-            This can create a magical, otherworldly landscape!
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/apostle-lighthouses.jpg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/apostle-lighthouses.jpg"
-              alt="A single lighthouse stands among trees on a cliff."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            Lighthouses of the Apostle Islands.
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/apostle-northern-lights.jpg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/apostle-northern-lights.jpg"
-              alt="Beautiful lights, mostly green and some red, light up the night sky. A small island floats in the calm water."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            The northern lights can be viewed from the Apostle Islands.
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/apostle-wildlife.jpg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/apostle-wildlife.jpg"
-              alt="An American marten on a branch snarling at the camera."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            American marten, endangered mammal native to the islands.
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/apostle-plants.jpg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/apostle-plants.jpg"
-              alt="A leafy plant on the ground with red berries."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            White Manderin plant
-          </figcaption>
-        </figure>
+        <div class="photo-grid photo-grid--auto-rows">
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/apostle-caves-winter.jpeg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/apostle-caves-winter.jpeg"
+                alt="Ice caves in the winter."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              In winter, when the lake freezes, the sea caves turn into ice
+              caves. This can create a magical, otherworldly landscape!
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/apostle-lighthouses.jpg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/apostle-lighthouses.jpg"
+                alt="A single lighthouse stands among trees on a cliff."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              Lighthouses of the Apostle Islands.
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/apostle-northern-lights.jpg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/apostle-northern-lights.jpg"
+                alt="Beautiful lights, mostly green and some red, light up the night sky. A small island floats in the calm water."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              The northern lights can be viewed from the Apostle Islands.
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/apostle-wildlife.jpg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/apostle-wildlife.jpg"
+                alt="An American marten on a branch snarling at the camera."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              American marten, endangered mammal native to the islands.
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/apostle-plants.jpg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/apostle-plants.jpg"
+                alt="A leafy plant on the ground with red berries."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              White Manderin plant
+            </figcaption>
+          </figure>
+        </div>
 
         <!-- Michelle Lockett (edited by Eric Xu) -->
       </div>

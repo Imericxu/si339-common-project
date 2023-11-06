@@ -30,55 +30,37 @@
     <title>Milktea</title>
   </head>
 
-  <body>
+  <body class="p-details">
     <a id="skip-to-main" href="#main-content">Skip to Main Content</a>
 
-    <nav id="nav">
-      <div class="dropup">
-        <button class="dropup__btn" title="Navigation" aria-label="Navigation">
-          <span>
-            <i class="fa-solid fa-paw dropup__btn__txt-icon"></i> Pets
-          </span>
-          <span class="dropup__btn__icon">
-            <i class="fa-solid fa-chevron-up"></i>
-          </span>
-        </button>
-
-        <div class="dropup__list-container">
-          <ul class="dropup__list">
-            <li class="dropup__list__item--selected">
-              <a class="dropup__list__action" href="../index.html">
-                <i class="fa-solid fa-paw fa-sm"></i> Pets
-              </a>
-            </li>
-            <li>
-              <a class="dropup__list__action" href="../travel.html">
-                <i class="fa-solid fa-plane fa-sm"></i> Travel
-              </a>
-            </li>
-            <li>
-              <a class="dropup__list__action" href="../recipes.html">
-                <i class="fa-solid fa-utensils fa-sm"></i> Recipes
-              </a>
-            </li>
-          </ul>
+    <header id="header">
+      <nav id="nav">
+        <div class="back-btn">
+          <a
+            class="back-btn__action"
+            href="../index.html"
+            aria-label="Back to Travel"
+          >
+            <i class="fa-solid fa-arrow-left fa-xl"></i>
+          </a>
         </div>
+      </nav>
+
+      <div class="hero" title="Milktea">
+        <img
+          class="img-blur-decor hero__bg"
+          src="../images/pets/milktea-main.jpg"
+          alt=""
+        />
+        <img
+          class="hero__img"
+          src="../images/pets/milktea-main.jpg"
+          alt="Milktea taking nap"
+        />
+        <h1 class="hero__txt">Milktea</h1>
+        <!-- Invisible button to hide text -->
+        <button class="hero__btn" aria-label="Hide text"></button>
       </div>
-    </nav>
-    <header class="hero l-full-pad" id="header" title="Milktea">
-      <img
-        class="img-blur-decor hero__bg"
-        src="../images/pets/milktea-main.jpg"
-        alt=""
-      />
-      <img
-        class="hero__img"
-        src="../images/pets/milktea-main.jpg"
-        alt="Milktea taking nap"
-      />
-      <h1 class="hero__txt">Milktea</h1>
-      <!-- Invisible button to hide text -->
-      <button class="hero__btn" aria-label="Hide text"></button>
     </header>
 
     <main id="main-content">
@@ -122,53 +104,55 @@
 
         <h2>Photo Gallery</h2>
 
-        <div class="constrained-img">
-          <img
-            class="img-blur-decor constrained-img__bg"
-            src="../images/pets/milktea-comfy.jpg"
-            alt=""
-          />
-          <img
-            class="constrained-img__img"
-            src="../images/pets/milktea-comfy.jpg"
-            alt="Milktea enjoying a good massage"
-          />
-        </div>
-        <div class="constrained-img">
-          <img
-            class="img-blur-decor constrained-img__bg"
-            src="../images/pets/milktea-laptop.jpg"
-            alt=""
-          />
-          <img
-            class="constrained-img__img"
-            src="../images/pets/milktea-laptop.jpg"
-            alt="Baby Milktea On Laptop"
-          />
-        </div>
-        <div class="constrained-img">
-          <img
-            class="img-blur-decor constrained-img__bg"
-            src="../images/pets/milktea-mirror.jpeg"
-            alt=""
-          />
-          <img
-            class="constrained-img__img"
-            src="../images/pets/milktea-mirror.jpeg"
-            alt="Milktea sighing at mirror"
-          />
-        </div>
-        <div class="constrained-img">
-          <img
-            class="img-blur-decor constrained-img__bg"
-            src="../images/pets/milktea-catbox.jpg"
-            alt=""
-          />
-          <img
-            class="constrained-img__img"
-            src="../images/pets/milktea-catbox.jpg"
-            alt="Milktea Catbox position"
-          />
+        <div class="photo-grid">
+          <div class="constrained-img photo-grid__img">
+            <img
+              class="img-blur-decor constrained-img__bg"
+              src="../images/pets/milktea-comfy.jpg"
+              alt=""
+            />
+            <img
+              class="constrained-img__img"
+              src="../images/pets/milktea-comfy.jpg"
+              alt="Milktea enjoying a good massage"
+            />
+          </div>
+          <div class="constrained-img photo-grid__img">
+            <img
+              class="img-blur-decor constrained-img__bg"
+              src="../images/pets/milktea-laptop.jpg"
+              alt=""
+            />
+            <img
+              class="constrained-img__img"
+              src="../images/pets/milktea-laptop.jpg"
+              alt="Baby Milktea On Laptop"
+            />
+          </div>
+          <div class="constrained-img photo-grid__img">
+            <img
+              class="img-blur-decor constrained-img__bg"
+              src="../images/pets/milktea-mirror.jpeg"
+              alt=""
+            />
+            <img
+              class="constrained-img__img"
+              src="../images/pets/milktea-mirror.jpeg"
+              alt="Milktea sighing at mirror"
+            />
+          </div>
+          <div class="constrained-img photo-grid__img">
+            <img
+              class="img-blur-decor constrained-img__bg"
+              src="../images/pets/milktea-catbox.jpg"
+              alt=""
+            />
+            <img
+              class="constrained-img__img"
+              src="../images/pets/milktea-catbox.jpg"
+              alt="Milktea Catbox position"
+            />
+          </div>
         </div>
 
         <!-- Olive Ren -->

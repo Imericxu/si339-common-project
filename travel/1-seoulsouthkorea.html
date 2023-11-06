@@ -30,55 +30,37 @@
     <title>Seoul, South Korea</title>
   </head>
 
-  <body>
+  <body class="p-details">
     <a id="skip-to-main" href="#main-content">Skip to Main Content</a>
 
-    <nav id="nav">
-      <div class="dropup">
-        <button class="dropup__btn" title="Navigation" aria-label="Navigation">
-          <span>
-            <i class="fa-solid fa-plane dropup__btn__txt-icon"></i> Travel
-          </span>
-          <span class="dropup__btn__icon">
-            <i class="fa-solid fa-chevron-up"></i>
-          </span>
-        </button>
-
-        <div class="dropup__list-container">
-          <ul class="dropup__list">
-            <li>
-              <a class="dropup__list__action" href="../index.html">
-                <i class="fa-solid fa-paw fa-sm"></i> Pets
-              </a>
-            </li>
-            <li class="dropup__list__item--selected">
-              <a class="dropup__list__action" href="../travel.html">
-                <i class="fa-solid fa-plane fa-sm"></i> Travel
-              </a>
-            </li>
-            <li>
-              <a class="dropup__list__action" href="../recipes.html">
-                <i class="fa-solid fa-utensils fa-sm"></i> Recipes
-              </a>
-            </li>
-          </ul>
+    <header id="header">
+      <nav id="nav">
+        <div class="back-btn">
+          <a
+            class="back-btn__action"
+            href="../travel.html"
+            aria-label="Back to Travel"
+          >
+            <i class="fa-solid fa-arrow-left fa-xl"></i>
+          </a>
         </div>
+      </nav>
+
+      <div class="hero" title="Seoul, South Korea">
+        <img
+          class="img-blur-decor hero__bg"
+          src="../images/travel/seoul-night.jpg"
+          alt=""
+        />
+        <img
+          class="hero__img"
+          src="../images/travel/seoul-night.jpg"
+          alt="Lights from buildings and cars illuminate the night sky."
+        />
+        <h1 class="hero__txt">Seoul, South Korea</h1>
+        <!-- Invisible button to hide text -->
+        <button class="hero__btn" aria-label="Hide text"></button>
       </div>
-    </nav>
-    <header class="hero l-full-pad" id="header" title="Seoul, South Korea">
-      <img
-        class="img-blur-decor hero__bg"
-        src="../images/travel/seoul-night.jpg"
-        alt=""
-      />
-      <img
-        class="hero__img"
-        src="../images/travel/seoul-night.jpg"
-        alt="Lights from buildings and cars illuminate the night sky."
-      />
-      <h1 class="hero__txt">Seoul, South Korea</h1>
-      <!-- Invisible button to hide text -->
-      <button class="hero__btn" aria-label="Hide text"></button>
     </header>
 
     <main id="main-content">
@@ -109,94 +91,97 @@
 
         <h2>Photo Gallery</h2>
 
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/seoul-namsan.jpg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/seoul-namsan.jpg"
-              alt="A tower on a hill overlooking the city"
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            Enjoy panoramic views of Seoul from Namsan Tower.
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/seoul-hongdae.jpg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/seoul-hongdae.jpg"
-              alt="A colorful street at night with people walking down it."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            With tons of interesting stores, Hongdae is a great place to shop
-            and experience the nightlife.
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/seoul-gyeongbokgung.jpg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/seoul-gyeongbokgung.jpg"
-              alt="A palace sits in front of mountains."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            Learn about the history of Seoul and visit Gyeongbokgung palace, one
-            of the many palaces Seoul has to offer.
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/seoul-gwangjang.jpg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/seoul-gwangjang.jpg"
-              alt="A vibrant market with lots of people in it."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            Try Korean street food for a low cost by visiting Gwangjang market.
-          </figcaption>
-        </figure>
-        <figure class="captioned-img">
-          <div class="captioned-img__img-container">
-            <img
-              class="img-blur-decor captioned-img__bg"
-              src="../images/travel/seoul-ikseondong.jpg"
-              alt=""
-            />
-            <img
-              class="captioned-img__img"
-              src="../images/travel/seoul-ikseondong.jpg"
-              alt="A small street running through traditional style buildings."
-            />
-          </div>
-          <figcaption class="captioned-img__caption">
-            Go to Ikseondong to try several unique cafes and stroll around
-            traditional hanok style buildings.
-          </figcaption>
-        </figure>
+        <div class="photo-grid photo-grid--auto-rows">
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/seoul-namsan.jpg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/seoul-namsan.jpg"
+                alt="A tower on a hill overlooking the city"
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              Enjoy panoramic views of Seoul from Namsan Tower.
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/seoul-hongdae.jpg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/seoul-hongdae.jpg"
+                alt="A colorful street at night with people walking down it."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              With tons of interesting stores, Hongdae is a great place to shop
+              and experience the nightlife.
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/seoul-gyeongbokgung.jpg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/seoul-gyeongbokgung.jpg"
+                alt="A palace sits in front of mountains."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              Learn about the history of Seoul and visit Gyeongbokgung palace,
+              one of the many palaces Seoul has to offer.
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/seoul-gwangjang.jpg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/seoul-gwangjang.jpg"
+                alt="A vibrant market with lots of people in it."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              Try Korean street food for a low cost by visiting Gwangjang
+              market.
+            </figcaption>
+          </figure>
+          <figure class="captioned-img photo-grid__img">
+            <div class="captioned-img__img-container">
+              <img
+                class="img-blur-decor captioned-img__bg"
+                src="../images/travel/seoul-ikseondong.jpg"
+                alt=""
+              />
+              <img
+                class="captioned-img__img"
+                src="../images/travel/seoul-ikseondong.jpg"
+                alt="A small street running through traditional style buildings."
+              />
+            </div>
+            <figcaption class="captioned-img__caption">
+              Go to Ikseondong to try several unique cafes and stroll around
+              traditional hanok style buildings.
+            </figcaption>
+          </figure>
+        </div>
 
         <!-- Claire Callen and Malwine Fischer -->
       </div>
